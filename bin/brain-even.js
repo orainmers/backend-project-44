@@ -19,7 +19,7 @@ while (i < 3) {
 
   if ((userAnswer === 'yes' && randomInt % 2 === 0) || (userAnswer === 'no' && randomInt % 2 !== 0)) {
     console.log('Correct!');
-    i += 1;
+    i++;
   } else {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
     console.log(`Let's try again, ${userName}!`);
