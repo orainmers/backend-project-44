@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { userName } from '../src/cli.js';
+import { greeting, userName } from '../src/cli.js';
+
+greeting();
 
 const calcGame = () => {
   console.log('What is the result of the expression?');
@@ -38,4 +40,4 @@ const calcGame = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default calcGame;
+calcGame();

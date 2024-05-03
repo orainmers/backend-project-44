@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { userName } from '../src/cli.js';
+import { greeting, userName } from '../src/cli.js';
+
+greeting();
 
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -41,4 +43,4 @@ const progressionGame = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export { progressionGame };
+progressionGame();

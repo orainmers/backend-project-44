@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { userName } from '../src/cli.js';
+import { greeting, userName } from '../src/cli.js';
+
+greeting();
 
 const evenGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -27,4 +29,4 @@ const evenGame = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default evenGame;
+evenGame();
