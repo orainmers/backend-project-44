@@ -38,10 +38,12 @@ const primeGame = () => {
       i += 1;
     } else if (trueAnswer === true) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'.`);
+      console.log(`Let's try again, ${userName}!`);
       i = 0;
       return;
     } else if (trueAnswer === false) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'.`);
+      console.log(`Let's try again, ${userName}!`);
       i = 0;
       return;
     }
