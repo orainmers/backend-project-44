@@ -3,7 +3,6 @@ import readlineSync from 'readline-sync';
 import { userName } from '../src/cli.js';
 
 const gcdGame = () => {
-
   const gcd = (a, b) => {
     if (b === 0) {
       return a;
@@ -12,7 +11,7 @@ const gcdGame = () => {
     }
     return gcd(b, a % b);
   };
-  
+
   console.log('Find the greatest common divisor of given numbers.');
   let i = 0;
   while (i < 3) {
