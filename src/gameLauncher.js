@@ -3,9 +3,10 @@ import evenGame from '../bin/brain-even.js';
 import calcGame from '../bin/brain-calc.js';
 import gcdGame from '../bin/brain-gcd.js';
 import { progressionGame } from '../bin/brain-progression.js';
+import { primeGame } from '../bin/brain-prime.js';
 
 export default () => {
-  const games = ['CALC', 'EVEN', 'GCD', 'PROGRESSION'];
+  const games = ['CALC', 'EVEN', 'GCD', 'PROGRESSION', 'PRIME'];
   const index = readlineSync.keyInSelect(games, 'Please choose a game: ');
   switch (index) {
     case 0:
@@ -16,6 +17,8 @@ export default () => {
       return gcdGame();
     case 3:
       return progressionGame();
+    case 4:
+      return primeGame();
     default:
       console.log('Goodbye!');
   }
