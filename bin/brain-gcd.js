@@ -22,7 +22,7 @@ const gcdGame = () => {
     const trueAnswer = gcd(randomInt1, randomInt2);
     if (userAnswer === trueAnswer) {
       console.log('Correct!');
-      i++;
+      i += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);

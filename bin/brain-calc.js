@@ -23,11 +23,13 @@ const calcGame = () => {
       case '*':
         trueAnswer = randomInt1 * randomInt2;
         break;
+      default:
+        break;
     }
 
     if (userAnswer === trueAnswer) {
       console.log('Correct!');
-      i++;
+      i += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
