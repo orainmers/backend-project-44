@@ -39,9 +39,11 @@ const primeGame = () => {
     } else if (trueAnswer === true) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'.`);
       i = 0;
+      return;
     } else if (trueAnswer === false) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'.`);
       i = 0;
+      return;
     }
   }
   console.log(`Congratulations, ${userName}!`);

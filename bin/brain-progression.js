@@ -39,6 +39,7 @@ const progressionGame = () => {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       i = 0;
+      return;
     }
   }
   console.log(`Congratulations, ${userName}!`);
