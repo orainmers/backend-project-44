@@ -13,7 +13,8 @@ const calcGame = () => {
     const operators = ['+', '-', '*'];
     const randomOperator = operators[Math.floor(Math.random() * 3)];
     console.log(`Question: ${randomInt1} ${randomOperator} ${randomInt2}`);
-    const userAnswer = readlineSync.question('Your answer: ');
+    // eslint-disable-next-line
+    const userAnswer = parseInt(readlineSync.question('Your answer: '));
     let trueAnswer = '';
     switch (randomOperator) {
       case '+':

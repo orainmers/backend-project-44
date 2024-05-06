@@ -10,8 +10,7 @@ const evenGame = () => {
   while (i < 3) {
     const randomInt = Math.floor(Math.random() * 101);
     console.log(`Question: ${randomInt}`);
-    // eslint-disable-next-line
-    const userAnswer = parseInt(readlineSync.question('Your answer: '));
+    const userAnswer = readlineSync.question('Your answer: ');
     let trueAnswer = '';
     if (randomInt % 2 === 0) {
       trueAnswer = 'yes';
