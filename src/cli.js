@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 
+// eslint-disable-next-line
 let userName = '';
 
 const greeting = () => {

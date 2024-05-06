@@ -20,7 +20,7 @@ const gcdGame = () => {
     const randomInt1 = Math.floor(Math.random() * 51);
     const randomInt2 = Math.floor(Math.random() * 51);
     console.log(`Question: ${randomInt1} ${randomInt2}`);
-    const userAnswer = parseInt(readlineSync.question('Your answer: '));
+    const userAnswer = readlineSync.question('Your answer: ');
     const trueAnswer = gcd(randomInt1, randomInt2);
     if (userAnswer === trueAnswer) {
       console.log('Correct!');

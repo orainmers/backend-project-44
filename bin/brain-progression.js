@@ -21,8 +21,9 @@ const makeProgression = () => {
 const hiddenNumber = (array) => {
   const index = getRandomInt(0, array.length - 1);
   const trueAnswer = array[index];
-  array[index] = '..';
-  return [array, trueAnswer];
+  const newArray = array;
+  newArray[index] = '..';
+  return [newArray, trueAnswer];
 };
 
 const progressionGame = () => {
